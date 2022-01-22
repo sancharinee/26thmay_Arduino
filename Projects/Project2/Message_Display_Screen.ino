@@ -1,4 +1,5 @@
 #include<LiquidCrystal.h> //Library for LCD
+//LiquidCrystal LCD(RS, EN, D4, D5, D6, D7);
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);// LCD pins at which it is attached to the Arduino
 
 void setup() //method used to run the source for the one time onlys
