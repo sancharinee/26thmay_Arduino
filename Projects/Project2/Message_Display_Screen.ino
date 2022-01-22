@@ -1,11 +1,12 @@
 #include<LiquidCrystal.h> //Library for LCD
-//LiquidCrystal LCD(RS, EN, D4, D5, D6, D7);
+//LiquidCrystal lcd(RS, EN, D4, D5, D6, D7);
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);// LCD pins at which it is attached to the Arduino
 
 void setup() //method used to run the source for the one time onlys
 {
   lcd.begin(16, 2);//LCD order i.e. 16 columns & 2 rows
   lcd.print("Project2");//prints on LCD
+  //lcd.setCursur(row,col);
   lcd.setCursor(0,1);//setting cursor on LCD
   lcd.print("Messaage Display Screen");//prints on LCD
   delay(1000);//delay of 1 sec
